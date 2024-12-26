@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Conversor de Base</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <h1 class="titulo">Conversor de Base</h1>
+        <h2 class="subtitulo">Selecione as Bases. Digite o número e clique em calcular</h2>
+    </div>
+    <div class="seletores">
+        <label for="base-atual">De: </label>
+        <select class="entrada" id="base-atual">
+            <option>Binário</option>
+            <option>Octal</option>
+            <option>Hexadecimal</option>
+            <option>Decimal</option>
+        </select>
+        <label for="base-final">Para: </label>
+        <select class="entrada" id="base-final"></select>
+        <select class="entrada" id="base-final">
+            <option>Binário</option>
+            <option>Octal</option>
+            <option>Hexadecimal</option>
+            <option>Decimal</option>
+        </select>
+    </div>
+    <input id="numero" class="entrada" type="text" placeholder="0"/>
+    <button id="botao">Converter</button>
+    <div id="resultado">Resultado</div>
+</body>
+</html>
