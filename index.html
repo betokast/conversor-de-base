@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
     <title>Conversor de Base</title>
 </head>
 <body>
@@ -15,22 +17,22 @@
     <div class="seletores">
         <label for="base-atual">De: </label>
         <select class="entrada" id="base-atual">
-            <option>Binário</option>
-            <option>Octal</option>
-            <option>Hexadecimal</option>
-            <option>Decimal</option>
+            <option value="2">Binário</option>
+            <option value="8">Octal</option>
+            <option value="16">Hexadecimal</option>
+            <option value="10">Decimal</option>
         </select>
         <label for="base-final">Para: </label>
-        <select class="entrada" id="base-final"></select>
         <select class="entrada" id="base-final">
-            <option>Binário</option>
-            <option>Octal</option>
-            <option>Hexadecimal</option>
-            <option>Decimal</option>
+            <option value="2">Binário</option>
+            <option value="8">Octal</option>
+            <option value="16">Hexadecimal</option>
+            <option value="10">Decimal</option>
         </select>
     </div>
     <input id="numero" class="entrada" type="text" placeholder="0"/>
     <button id="botao">Converter</button>
-    <div id="resultado">Resultado</div>
+    <div id="resultado" class="invisivel"></div>
+    <script src="./script.js"></script>
 </body>
 </html>
